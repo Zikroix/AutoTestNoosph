@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Crazy summ</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script language="javascript">
+      function newElement() {
+        const inputValue = document.getElementById("myInput").value;
+        if (inputValue === '') {
+          alert("You must write something!");
+        }
+        summ = (inputValue.split("a").length - 1);
+        document.getElementsByName("result")[0].innerHTML = summ;
+      }
+    </script>
+
+</head>
+<body>
+<div id="myDIV" class="header">
+    <h2>Get sum symbols "a"</h2>
+    <div class="wrap_elemets">
+        <input value= "aaaassdasdasd " type="text" id="myInput" placeholder="Input the text" maxlength="100">
+        <span onclick="newElement()" id="Btn1" class="addBtn">Summ</span>
+    </div>
+    <span  class="output" name="result">0</span>
+    </p>
+</div>
+</body>
+</html>
+
